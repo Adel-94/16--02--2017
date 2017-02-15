@@ -1,0 +1,40 @@
+CSS-de selectorlar istediyimiz stilde elementleri secmek ucun istifade olunan elementlerdir.
+Numunelere baxaq:
+div p -----div p {
+ 
+    background-color: red;
+}
+yazdigimiz zaman div-i daxilindeki p-ler ucun arxa fon qirmizi rengleyecek.
+h1,p----h1, p {
+    background-color: yellow;
+}
+ yazdigimiz zaman butun p ve h1 elementlerini arxa fonu sari olacaq.
+
+div > p {
+    background-color: yellow;
+}
+yazdigimiz zaman,yeni boyukdur isaresi qoyulursa,o zaman div-in daxilindeki olan p-ni sari renge boyayir.
+div + p {
+    background-color: yellow;
+}
+yazdigimiz zman div-den sonraki ilk elementin arxa fonu olur.
+p ~ ul {
+    background: blue;
+}
+yazdigimiz zmaman parent-i p olan butun ul-ri mavi renge boyayacaq.
+
+a[target] {
+    background-color: yellow;
+}
+yazdigimiz zaman a eleementinde olan butun target atributlari sari edir.
+
+p:nth-last-child(2) {
+    background: red;
+}
+yazdigimiz zaman parent-in child-i olan sonuncu p elementinin backgroundunu qirmizi edir.
+<style> 
+p:nth-child(2) {
+    background: green;
+}
+yazdigimiz zaman ise  parent-in child-i olan ikinci p elementinin backgroundunu yasil edir.
+
